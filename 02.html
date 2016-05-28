@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>次の要素でclearする場合</title>
+<link rel="stylesheet" href="common.css">
+<style>
+.my-list {
+  clear: left;
+}
+.footer {
+  clear: left;
+}
+</style>
+</head>
+<body>
+<h1>次の要素でclearする場合</h1>
+<p>
+  floatを使う要素の次の要素にclearを指定しています。<br>
+  フッターの位置は正しくなりましたが、親要素の背景色やマージンが反映されていません。
+</p>
+<div class="my-list">
+  <div class="item">AAA</div>
+  <div class="item">BBB</div>
+  <div class="item">CCC</div>
+</div>
+<div class="my-list">
+  <div class="item">あああ</div>
+  <div class="item">いいい</div>
+  <div class="item">ううう</div>
+</div>
+<div class="my-list">
+  <div class="item">阿阿阿</div>
+  <div class="item">以以以</div>
+  <div class="item">宇宇宇</div>
+</div>
+<div class="footer">
+  フッター
+</div>
+</body>
+</html>

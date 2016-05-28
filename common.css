@@ -1,0 +1,19 @@
+/**
+ * 4つの例すべてで共通するスタイル指定
+ */
+.my-list {
+  background-color: gray;
+  margin: 20px 0;
+  width: 630px;
+}
+.item {
+  background-color: blue;
+  color: #fff;
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+}
+.footer {
+  background-color: red;
+  color: #fff;
+}

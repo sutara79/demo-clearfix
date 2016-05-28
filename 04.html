@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>クリアフィックスを使う場合</title>
+<link rel="stylesheet" href="common.css">
+<style>
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+</style>
+</head>
+<body>
+<h1>クリアフィックスを使う場合</h1>
+<p>
+  文書構造にはなんら手を加えず、親要素にclearfixクラスを追加するだけで実現できます。
+</p>
+<div class="my-list clearfix"><!-- clearfixクラスを適用 -->
+  <div class="item">AAA</div>
+  <div class="item">BBB</div>
+  <div class="item">CCC</div>
+</div>
+<div class="my-list clearfix"><!-- clearfixクラスを適用 -->
+  <div class="item">あああ</div>
+  <div class="item">いいい</div>
+  <div class="item">ううう</div>
+</div>
+<div class="my-list clearfix"><!-- clearfixクラスを適用 -->
+  <div class="item">阿阿阿</div>
+  <div class="item">以以以</div>
+  <div class="item">宇宇宇</div>
+</div>
+<div class="footer">
+  フッター
+</div>
+</body>
+</html>
