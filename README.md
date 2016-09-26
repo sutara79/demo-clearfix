@@ -23,9 +23,9 @@
   <div class="item">以以以</div>
   <div class="item">宇宇宇</div>
 </div>
-<footer>
+<div class="footer">
   フッター
-</footer>
+</div>
 ```
 
 ##### CSS
@@ -62,7 +62,7 @@
 .container {
   clear: left;
 }
-footer {
+.footer {
   clear: left;
 }
 ```
@@ -97,7 +97,11 @@ footer {
 - [デモ: 04.html](http://sutara79.github.io/demo-clearfix/04.html)
 
 HTML文中に空要素を記述せず、`:after`というCSSの擬似要素を用いて空要素を作成します。  
-これならば、デザインのためだけ不要なHTMLタグを記述しなくてすみます。
+これならば、デザインのためだけ不要なHTMLタグを記述しなくてすみます。  
+なお、対応ブラウザは**IE8以上**です。  
+IE6,7向けの記述は下記を参考にしてください。
+
+- [clearfixの最新版 -フロート関連やマージン相殺の不具合を解決するモダンブラウザ用clearfix | コリス](http://coliss.com/articles/build-websites/operation/css/css-latest-clearfix.html)
 
 ```html
 <div class="container clearfix"><!-- clearfixクラスを適用 -->
