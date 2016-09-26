@@ -1,19 +1,18 @@
 /**
  * 4つの例すべてで共通するスタイル指定
  */
-.my-list {
+.container {
   background-color: gray;
   margin: 20px 0;
-  width: 630px;
 }
 .item {
   background-color: blue;
   color: #fff;
   float: left;
   margin-right: 10px;
-  width: 200px;
+  width: 100px;
 }
-.footer {
+footer {
   background-color: red;
   color: #fff;
 }

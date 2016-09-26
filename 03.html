@@ -3,40 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>直後に空要素を設ける場合</title>
+<title>フロートの直後に空要素を設置すれば解決</title>
 <link rel="stylesheet" href="common.css">
 <style>
-.clear {
+.clear-element {
   clear: both;
 }
 </style>
 </head>
 <body>
-<h1>直後に空要素を設ける場合</h1>
+<h1>フロートの直後に空要素を設置すれば解決</h1>
 <p>
   clearを指定した空要素をそれぞれの末尾に追加することで、親要素の背景色もマージンも正しく反映されています。<br>
   しかし、見栄えのためにHTMLの文書構造を汚すのは好ましくありません。
 </p>
-<div class="my-list">
+<div class="container">
   <div class="item">AAA</div>
   <div class="item">BBB</div>
   <div class="item">CCC</div>
-  <div class="clear"></div><!-- 空要素 -->
+  <div class="clear-element"></div><!-- 空要素 -->
 </div>
-<div class="my-list">
+<div class="container">
   <div class="item">あああ</div>
   <div class="item">いいい</div>
   <div class="item">ううう</div>
-  <div class="clear"></div><!-- 空要素 -->
+  <div class="clear-element"></div><!-- 空要素 -->
 </div>
-<div class="my-list">
+<div class="container">
   <div class="item">阿阿阿</div>
   <div class="item">以以以</div>
   <div class="item">宇宇宇</div>
-  <div class="clear"></div><!-- 空要素 -->
+  <div class="clear-element"></div><!-- 空要素 -->
 </div>
-<div class="footer">
+<footer>
   フッター
-</div>
+</footer>
 </body>
 </html>

@@ -3,32 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>クリアフィックスを使えばキレイ</title>
+<title>clearしないとどうなるか</title>
 <link rel="stylesheet" href="common.css">
-<style>
-.clearfix:after {
-  clear: both;
-  content: '';
-  display: block;
-}
-</style>
 </head>
 <body>
-<h1>クリアフィックスを使えばキレイ</h1>
-<p>
-  文書構造にはなんら手を加えず、親要素にclearfixクラスを追加するだけで実現できます。
-</p>
-<div class="container clearfix"><!-- clearfixクラスを適用 -->
+<h1>clearしないとどうなるか</h1>
+<p>親要素の背景色やマージンが反映されず、フッターの位置も狂っています。</p>
+<div class="container">
   <div class="item">AAA</div>
   <div class="item">BBB</div>
   <div class="item">CCC</div>
 </div>
-<div class="container clearfix"><!-- clearfixクラスを適用 -->
+<div class="container">
   <div class="item">あああ</div>
   <div class="item">いいい</div>
   <div class="item">ううう</div>
 </div>
-<div class="container clearfix"><!-- clearfixクラスを適用 -->
+<div class="container">
   <div class="item">阿阿阿</div>
   <div class="item">以以以</div>
   <div class="item">宇宇宇</div>
